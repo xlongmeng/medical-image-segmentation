@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Datasets and large generated files
+datasets/raw/**
+datasets/processed/**
+datasets/external/**
+!datasets/raw/.gitkeep
+!datasets/processed/.gitkeep
+
+# Model artifacts
+checkpoints/
+weights/
+pretrained/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+
+# Medical image and pathology formats
+*.nii
+*.nii.gz
+*.mha
+*.nrrd
+*.dcm
+*.svs
+*.ndpi
+*.ome.tif
+*.ome.tiff
+*.tif
+*.tiff
+
+# Experiment outputs
+outputs/
+results/
+runs/
+wandb/
+mlruns/
+
+# Logs
+*.log
