@@ -1,0 +1,26 @@
+experiment_name: example_experiment
+method: nnunet_v2
+dataset: example_dataset
+task: segmentation
+seed: 42
+
+data:
+  raw_dir: datasets/raw/example_dataset
+  processed_dir: datasets/processed/example_dataset
+  fold: 0
+
+training:
+  epochs: null
+  batch_size: null
+  patch_size: null
+  learning_rate: null
+  mixed_precision: true
+
+evaluation:
+  metrics:
+    - dice
+    - hd95
+  save_predictions: false
+  save_visualizations: true
+
+notes: ""
